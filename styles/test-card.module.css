@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 290px 300px 300px 310px;
+    grid-template-areas: "card1 card1 card2 card3"
+        "card4 card5 card5 card3";
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+.details {
+    width: auto;
+    font-family: 'Barlow Semi Condensed',
+        sans-serif;
+    padding-left: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.name {
+    font-size: 16px;
+}
+
+.verif {
+    font-size: 14px;
+    padding-top: 3px;
+    opacity: 50%;
+}
+
+.nameImage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+}
+
+.quoteContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Barlow Semi Condensed',
+        sans-serif;
+    height: 100%;
+}
+
+.titleQuote {
+    font-size: 23px;
+}
+
+.subQuote {
+    opacity: 70%;
+    font-size: 15px;
+    width: 103%;
+}
+
+.itemA {
+    grid-area: card1;
+    width: auto;
+    height: 330px;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 12px;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    z-index: 1;
+}
+
+.quoteIcon {
+    background-image: url('../public/test-card/bg-pattern-quotation.svg');
+    background-repeat: no-repeat;
+    background-size: 120px;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    left: 401px;
+    z-index: -1;
+}
+
+.danielAvatar {
+    background-image: url('../public/test-card/image-daniel.jpg');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid hsl(264, 80%, 70%);
+}
+
+.itemB {
+    grid-area: card2;
+    background-color: hsl(217, 19%, 35%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    width: 300px;
+    height: 330px;
+}
+
+.jonathanAvatar {
+    background-image: url('../public/test-card/image-jonathan.jpg');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid hsl(217, 19%, 35%);
+}
+
+.itemC {
+    grid-area: card3;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    width: auto;
+    height: 660px;
+    color: hsl(217, 19%, 35%);
+    box-shadow: 23px 41px 55px -24px rgba(0, 0, 0, 0.17);
+}
+
+.kiraAvatar {
+    background-image: url('../public/test-card/image-kira.jpg');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.itemD {
+    grid-area: card4;
+    width: 290px;
+    height: 300px;
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(217, 19%, 35%);
+    border-radius: 12px;
+    box-shadow: 23px 41px 55px -24px rgba(0, 0, 0, 0.17);
+}
+
+.jeanetteAvatar {
+    background-image: url('../public/test-card/image-jeanette.jpg');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+.itemE {
+    grid-area: card5;
+    background-color: hsl(219, 29%, 14%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 12px;
+    width: auto;
+    height: 300px;
+}
+
+.patrickAvatar {
+    background-image: url('../public/test-card/image-patrick.jpg');
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid hsl(263, 55%, 52%);
+}
+
+.cardContent {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    height: inherit;
+    width: inherit;
+    padding: 30px 35px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1300px) {
+    .main {
+        padding: 5rem 0;
+        display: grid;
+        grid-template-columns: 330px;
+        grid-template-areas: "card1"
+            "card2"
+            "card4"
+            "card5"
+            "card3";
+        row-gap: 30px;
+        column-gap: 30px;
+    }
+
+    .cardContent {
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        height: inherit;
+        width: inherit;
+        padding: 25px 30px;
+    }
+
+    .quoteContainer {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-family: 'Barlow Semi Condensed',
+            sans-serif;
+        height: 100%;
+    }
+
+    .titleQuote {
+        font-size: 20px;
+    }
+
+    .quoteIcon {
+        background-image: url('../public/test-card/bg-pattern-quotation.svg');
+        background-repeat: no-repeat;
+        background-size: 110px;
+        width: 110px;
+        height: 110px;
+        position: absolute;
+        left: 200px;
+        z-index: -1;
+    }
+
+    .itemA {
+        grid-area: card1;
+        width: auto;
+        height: 500px;
+        background-color: hsl(263, 55%, 52%);
+        border-radius: 12px;
+        color: hsl(0, 0%, 100%);
+        position: relative;
+        z-index: 1;
+    }
+
+    .itemB {
+        grid-area: card2;
+        background-color: hsl(217, 19%, 35%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 12px;
+        width: auto;
+        height: 270px;
+    }
+
+    .itemC {
+        grid-area: card3;
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 12px;
+        width: auto;
+        height: 530px;
+        color: hsl(217, 19%, 35%);
+        box-shadow: 23px 41px 55px -24px rgba(0, 0, 0, 0.17);
+    }
+
+    .itemD {
+        grid-area: card4;
+        width: auto;
+        height: 260px;
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(217, 19%, 35%);
+        border-radius: 12px;
+        box-shadow: 23px 41px 55px -24px rgba(0, 0, 0, 0.17);
+    }
+
+    .itemE {
+        grid-area: card5;
+        background-color: hsl(219, 29%, 14%);
+        color: hsl(0, 0%, 100%);
+        border-radius: 12px;
+        width: auto;
+        height: 430px;
+    }
+}

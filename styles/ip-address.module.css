@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+.container {
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.topPanel {
+    background-image: url('../public/ip-tracker/pattern-bg.png');
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+}
+
+.bottomPanel {
+    background-color: black;
+    height: 648px;
+    width: 1440px;
+    z-index: -1;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    padding-bottom: 90px;
+}
+
+.inputBar {
+    border-radius: 18px 0 0 18px;
+    padding: 18px 0 18px 25px;
+    border: none;
+    width: 600px;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+button.searchButton {
+    background-image: url('../public/ip-tracker/icon-arrow.svg');
+    background-repeat: no-repeat;
+    border-radius: 0 18px 18px 0px;
+    border: none;
+    width: 62px;
+    height: 63px;
+    background-color: black;
+    background-position: center;
+    outline: none;
+}
+
+button.searchButton:active {
+    background-color: hsl(0, 0%, 17%);
+}
+
+.infoPanel {
+    background-color: white;
+    border-radius: 18px;
+    height: 160px;
+    width: 80%;
+    position: absolute;
+    top: 175px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 30px;
+}
+
+.statPanel {
+    height: 100%;
+    width: 250px;
+    padding-right: 35px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.infoTitle {
+    font-size: 12px;
+    font-weight: 700;
+    opacity: 50%;
+    padding-bottom: 15px;
+    letter-spacing: 1.5px;
+}
+
+.result {
+    font-size: 25px;
+    width: 200px;
+}
+
+.divider {
+    height: 75%;
+    width: 1px;
+    border-left: 1px solid rgb(215, 215, 215);
+    padding-right: 35px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+    .topPanel {
+        background-image: url('../public/ip-tracker/pattern-bg.png');
+        background-repeat: no-repeat;
+        height: 250px;
+        width: 375px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        font-size: 27px;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .bottomPanel {
+        background-color: black;
+        height: 603px;
+        width: 375px;
+    }
+
+    .searchBar {
+        display: flex;
+        align-items: center;
+        padding-bottom: 90px;
+    }
+
+    .inputBar {
+        border-radius: 18px 0 0 18px;
+        padding: 18px 0 18px 25px;
+        border: none;
+        width: 270px;
+        outline: none;
+        font-family: 'Rubik', sans-serif;
+        font-size: 18px;
+    }
+
+    button.searchButton {
+        background-image: url('../public/ip-tracker/icon-arrow.svg');
+        background-repeat: no-repeat;
+        border-radius: 0 18px 18px 0px;
+        border: none;
+        width: 64px;
+        height: 63px;
+        background-color: black;
+        background-position: center;
+        outline: none;
+    }
+
+    .infoPanel {
+        background-color: white;
+        border-radius: 18px;
+        height: fit-content;
+        width: 325px;
+        position: absolute;
+        top: 155px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 25px 20px 15px 20px;
+        z-index: 1;
+    }
+
+    .statPanel {
+        height: 100%;
+        width: 250px;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .infoTitle {
+        font-size: 10px;
+        font-weight: 700;
+        opacity: 50%;
+        padding-bottom: 5px;
+        letter-spacing: 1.5px;
+    }
+
+    .result {
+        font-size: 18px;
+        width: 115%;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .divider {
+        height: 75%;
+        width: 1px;
+        border-left: 1px solid rgb(215, 215, 215);
+        padding-right: 35px;
+    }
+}

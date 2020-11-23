@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(185, 75%, 39%);
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    min-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainCard {
+    border-radius: 5%;
+    width: 350px;
+    height: 400px;
+    overflow: hidden;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+        0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+        0 12.5px 10px rgba(0, 0, 0, 0.06),
+        0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+        0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+        0 100px 80px rgba(0, 0, 0, 0.12);
+    z-index: 1;
+}
+
+.headerTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 140px;
+    width: 100%;
+    background-image: url('../public/profile-card/bg-pattern-card.svg');
+
+}
+
+.avatarImg {
+    border-radius: 50%;
+    border: 5px solid white;
+    width: 105px;
+    height: 120px;
+    position: relative;
+    top: -12.5%;
+    background-image: url('../public/profile-card/image-victor.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.centerContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    top: -10%;
+}
+
+.nameAge {
+    display: flex;
+    padding: 20px 0 13px 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.name {
+    padding-right: 8px;
+    font-weight: 700;
+}
+
+.age {
+    opacity: 0.6;
+}
+
+.location {
+    opacity: 0.6;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 15px;
+}
+
+.bottomContent {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    border-top: 1px solid hsl(0, 0%, 85%);
+}
+
+.socialBlock {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.socialNumbers {
+    font-weight: bolder;
+    padding-bottom: 6px;
+}
+
+.socialType {
+    opacity: 0.6;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.backgroundTop {
+    background-image: url('../public/profile-card/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    position: absolute;
+    height: 50%;
+    width: 70%;
+    bottom: 50%;
+    left: -10%;
+}
+
+.backgroundBottom {
+    background-image: url('../public/profile-card/bg-pattern-bottom.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+}
+
+@media only screen and (max-width: 375px) {
+    .backgroundTop {
+        background-image: url('../public/profile-card/bg-pattern-top.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 50%;
+        width: 300%;
+        bottom: 50%;
+        left: -220%;
+    }
+
+    .backgroundBottom {
+        background-image: url('../public/profile-card/bg-pattern-bottom.svg');
+        background-repeat: no-repeat;
+        position: absolute;
+        height: 50%;
+        width: 60%;
+        top: 50%;
+        left: 40%;
+    }
+}
