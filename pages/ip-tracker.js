@@ -18,7 +18,6 @@ export default function Home() {
 	});
 
 	const logIP = () => {
-		console.log(ipAddress);
 		axios
 			.get(
 				'https://cors-anywhere.herokuapp.com/https://geo.ipify.org/api/v1?apiKey=' +

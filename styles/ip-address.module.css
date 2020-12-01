@@ -149,9 +149,10 @@ button.searchButton:active {
         padding: 18px 0 18px 25px;
         border: none;
         width: 270px;
+        height: 63px;
         outline: none;
         font-family: 'Rubik', sans-serif;
-        font-size: 18px;
+        font-size: 13px;
     }
 
     button.searchButton {
