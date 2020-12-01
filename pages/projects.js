@@ -89,6 +89,22 @@ const projects = () => {
 							</Stack>
 						</Box>
 					</Link>
+					<Link as={NextLink} href='/todo-app'>
+						<Box
+							_hover={{ bg: 'gray.100', cursor: 'pointer' }}
+							rounded='lg'
+							p='5px'
+							textAlign='center'
+						>
+							To Do App
+							<Stack h='50px' align='center' justify='center' spacing='10px' isInline>
+								<Icon as={SiNextDotJs} h={6} w={6} />
+								<Icon as={SiHtml5} h={6} w={6} />
+								<Icon as={SiCss3} h={6} w={6} />
+								<Icon as={SiJavascript} h={6} w={6} />
+							</Stack>
+						</Box>
+					</Link>
 				</Stack>
 			</main>
 		</div>
