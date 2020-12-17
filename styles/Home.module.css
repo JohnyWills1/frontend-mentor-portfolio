@@ -28,11 +28,11 @@
   align-items: center;
   background-color: white;
   border-radius: 15px;
-  height: 600px;
-  width: 800px;
+  height: 650px;
+  width: 900px;
   box-shadow: 25px 31px 53px -33px rgba(0, 0, 0, 0.58);
-  overflow: auto;
-
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .projectsMain::-webkit-scrollbar {
@@ -127,7 +127,8 @@
     height: 500px;
     width: 400px;
     box-shadow: 25px 31px 53px -33px rgba(0, 0, 0, 0.58);
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .title {
@@ -160,7 +161,8 @@
     height: 600px;
     width: 700px;
     box-shadow: 25px 31px 53px -33px rgba(0, 0, 0, 0.58);
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 }
 
@@ -189,7 +191,8 @@
     height: 500px;
     width: 300px;
     box-shadow: 25px 31px 53px -33px rgba(0, 0, 0, 0.58);
-    overflow: auto;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .title {

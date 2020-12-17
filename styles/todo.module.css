@@ -60,6 +60,7 @@
     width: 26px;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .lightButton {
@@ -69,6 +70,7 @@
     width: 26px;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .todoForm {

@@ -27,6 +27,7 @@ const projects = () => {
 					spacing='10px'
 					width='inherit'
 					divider={<Divider borderColor='gray.200' />}
+					w='95%'
 				>
 					<Link as={NextLink} href='/profile-card'>
 						<Box
@@ -102,6 +103,37 @@ const projects = () => {
 								<Icon as={SiHtml5} h={6} w={6} />
 								<Icon as={SiCss3} h={6} w={6} />
 								<Icon as={SiJavascript} h={6} w={6} />
+							</Stack>
+						</Box>
+					</Link>
+					<Link as={NextLink} href='/social-dash'>
+						<Box
+							_hover={{ bg: 'gray.100', cursor: 'pointer' }}
+							rounded='lg'
+							p='5px'
+							textAlign='center'
+						>
+							Social Dashboard
+							<Stack h='50px' align='center' justify='center' spacing='10px' isInline>
+								<Icon as={SiNextDotJs} h={6} w={6} />
+								<Icon as={SiHtml5} h={6} w={6} />
+								<Icon as={SiCss3} h={6} w={6} />
+								<Icon as={SiJavascript} h={6} w={6} />
+							</Stack>
+						</Box>
+					</Link>
+					<Link as={NextLink} href='/price'>
+						<Box
+							_hover={{ bg: 'gray.100', cursor: 'pointer' }}
+							rounded='lg'
+							p='5px'
+							textAlign='center'
+						>
+							Price Component
+							<Stack h='50px' align='center' justify='center' spacing='10px' isInline>
+								<Icon as={SiNextDotJs} h={6} w={6} />
+								<Icon as={SiHtml5} h={6} w={6} />
+								<Icon as={SiCss3} h={6} w={6} />
 							</Stack>
 						</Box>
 					</Link>
